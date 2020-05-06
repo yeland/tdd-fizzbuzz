@@ -21,4 +21,16 @@ public class StudentTest {
         Student student3 = new Student(7);
         assertThat(student3.fizzBuzz()).isEqualTo("Whizz");
     }
+
+    @Test
+    void should_return_special_words_when_it_is_two_numbers_multiple() {
+        Student student1 = new Student(15);
+        assertThat(student1.fizzBuzz()).isEqualTo("FizzBuzz");
+
+        Student student2 = new Student(21);
+        assertThat(student2.fizzBuzz()).isEqualTo("FizzWhizz");
+
+        Student student3 = new Student(35);
+        assertThat(student3.fizzBuzz()).isEqualTo("BuzzWhizz");
+    }
 }

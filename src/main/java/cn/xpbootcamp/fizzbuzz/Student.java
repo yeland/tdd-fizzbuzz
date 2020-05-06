@@ -8,18 +8,23 @@ public class Student {
     }
 
     public String fizzBuzz() {
+        String words = "";
         if (order % 3 == 0) {
-            return "Fizz";
+            words += "Fizz";
         }
 
         if (order % 5 == 0) {
-            return "Buzz";
+            words += "Buzz";
         }
 
         if (order % 7 == 0) {
-            return "Whizz";
+            words += "Whizz";
         }
 
-        return Integer.toString(order);
+        if (!words.equals("")) {
+            return words;
+        } else {
+            return Integer.toString(order);
+        }
     }
 }

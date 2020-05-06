@@ -33,4 +33,10 @@ public class StudentTest {
         Student student3 = new Student(35);
         assertThat(student3.fizzBuzz()).isEqualTo("BuzzWhizz");
     }
+
+    @Test
+    void should_return_special_words_when_it_is_three_numbers_multiple() {
+        Student student = new Student(105);
+        assertThat(student.fizzBuzz()).isEqualTo("FizzBuzzWhizz");
+    }
 }

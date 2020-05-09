@@ -1,4 +1,8 @@
-1. 给定一个学生，且其顺序为第n个，则其报数n。
-2. 给定一个学生，且其顺序为第n个，如果n是3的倍数，则说Fizz；如果n是5的倍数，则说Buzz；如果n是第7的倍数，则说Whizz。
-3. 给定一个学生，且其顺序为第n个，如果n是3和5的倍数，则说FizzBuzz。
-4. 给定一个学生，且其顺序为第n个，如果n是3、5和7的倍数，则说FizzBuzzWhizz。
+1. Given 学生序号不为3、5和7，When 报数，Then 报2
+1. Given 学生序号为3，When 报数，Then 报Fizz
+1. Given 学生序号为5，When 报数，Then 报Buzz
+1. Given 学生序号为7，When 报数，Then 报Whizz
+1. Given 学生序号为15，When 报数，Then 报FizzBuzz
+1. Given 学生序号为21，When 报数，Then 报FizzWhizz
+1. Given 学生序号为35，When 报数，Then 报BuzzWhizz
+1. Given 学生序号为105，When 报数，Then 报FizzBuzzWhizz

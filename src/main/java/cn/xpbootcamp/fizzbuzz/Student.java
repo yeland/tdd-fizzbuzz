@@ -1,30 +1,30 @@
 package cn.xpbootcamp.fizzbuzz;
 
 public class Student {
-    private final int order;
+    private final int number;
 
-    public Student(int order) {
-        this.order = order;
+    public Student(int number) {
+        this.number = number;
     }
 
     public String fizzBuzz() {
         String words = "";
-        if (order % 3 == 0) {
+        if (number % 3 == 0) {
             words += "Fizz";
         }
 
-        if (order % 5 == 0) {
+        if (number % 5 == 0) {
             words += "Buzz";
         }
 
-        if (order % 7 == 0) {
+        if (number % 7 == 0) {
             words += "Whizz";
         }
 
         if (!words.equals("")) {
             return words;
         } else {
-            return Integer.toString(order);
+            return Integer.toString(number);
         }
     }
 }

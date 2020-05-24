@@ -2,15 +2,19 @@ package cn.xpbootcamp.fizzbuzz;
 
 public class FizzBuzz {
     public String getCount(int order) {
+        String countString = "";
         if (order % 3 == 0) {
-            return "Fizz";
+            countString = countString + "Fizz";
         }
         if (order % 5 == 0) {
-            return "Buzz";
+            countString = countString + "Buzz";
         }
         if (order % 7 == 0) {
             return "Whizz";
         }
-        return Integer.toString(order);
+        if (countString.isEmpty()) {
+            return Integer.toString(order);
+        }
+        return countString;
     }
 }

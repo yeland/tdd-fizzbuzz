@@ -10,7 +10,7 @@ public class FizzBuzz {
             countString = countString + "Buzz";
         }
         if (order % 7 == 0) {
-            return "Whizz";
+            countString = countString + "Whizz";
         }
         if (countString.isEmpty()) {
             return Integer.toString(order);

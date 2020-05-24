@@ -40,4 +40,10 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("FizzWhizz", fizzBuzz.getCount(21));
     }
+
+    @Test
+    void should_get_BuzzWhizz_when_count_given_number_15_is_dividable_by_5_7() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("BuzzWhizz", fizzBuzz.getCount(35));
+    }
 }

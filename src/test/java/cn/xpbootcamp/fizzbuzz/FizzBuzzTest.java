@@ -22,4 +22,10 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("Buzz", fizzBuzz.getCount(5));
     }
+
+    @Test
+    void should_get_Whizz_when_count_given_number_7_is_dividable_by_7() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Whizz", fizzBuzz.getCount(7));
+    }
 }

@@ -10,4 +10,10 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertEquals("2", fizzBuzz.getCount(2));
     }
+
+    @Test
+    void should_get_Fizz_when_count_given_number_3_is_dividable_by_3() {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertEquals("Fizz", fizzBuzz.getCount(3));
+    }
 }
